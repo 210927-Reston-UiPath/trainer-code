@@ -25,3 +25,12 @@
 - Classes group together data and logic that go together
 - Do note that encapsulation is about wrapping data and logic that go together in one unit
   - This is accomplished by: data wrapping (encaps via packaging) and data hiding (access mods)
+
+## Programming with VB
+
+- No semi colons
+- case insensitive
+
+### Methods in VB
+
+-
