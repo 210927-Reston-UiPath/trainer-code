@@ -24,6 +24,7 @@ Class MainMenu
         Console.WriteLine("Phone Number: ")
         dim number as string = Console.ReadLine()
         dim newfriend as Contact = new Contact(name, Int32.Parse(number))
+        Console.WriteLine("New Friend Created! " + newfriend.ToString())
     End Sub
     
 End Class
