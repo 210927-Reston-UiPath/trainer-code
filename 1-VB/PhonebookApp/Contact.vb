@@ -5,6 +5,9 @@ Class Contact
         Me.Name = name
         Me.PhoneNumber = number
     End Sub
+    Public Sub New()
+        ' parameterless constructor
+    End Sub
     
 
     Overrides Function ToString()  As string
