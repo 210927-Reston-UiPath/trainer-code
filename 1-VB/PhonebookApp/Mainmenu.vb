@@ -37,6 +37,4 @@ Class MainMenu
             Console.WriteLine(person.ToString())
         Next
     End Sub
-    
-    
 End Class
