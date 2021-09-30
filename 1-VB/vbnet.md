@@ -33,4 +33,7 @@
 
 ### Methods in VB
 
--
+- 2 types of methods: subs and functions
+- Subs return void
+- Functions return something
+- Both of these execute some logic when you call on them
