@@ -42,7 +42,7 @@ Class MainMenu
         Next
     End Sub
     Sub AddFriend2File(ByVal person as Contact)
-        dim existingContacts as List(of Contact) = GetContacts()
+        dim existingContacts as List(of Contact) = GetContactsFromFile()
         existingContacts.Add(person)
         jsonstring = JsonSerializer.Serialize(existingContacts)
         File.WriteAllText(filename, jsonstring)
