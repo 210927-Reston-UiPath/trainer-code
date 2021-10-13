@@ -30,4 +30,3 @@ insert into trainers (trainerName, campus, caffeineLevel) values
 insert into batch (associateID, trainerID) values
 (1,5), (2,3), (5,5), (6,1),(7, 4), (8,1);
 
-
