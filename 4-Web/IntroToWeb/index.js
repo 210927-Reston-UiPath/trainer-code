@@ -16,5 +16,6 @@ function buy(name) {
     let itemQuantity = newItem.insertCell(2);
     itemQuantity.innerHTML = document.querySelector(elementId + ' td .quantity').value;
 
+    //resets the input value so the quantity of the original order doesn't "stick"
     document.querySelector(elementId + ' td .quantity').value = '';
 }
