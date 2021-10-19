@@ -19,3 +19,8 @@ function buy(name) {
     //resets the input value so the quantity of the original order doesn't "stick"
     document.querySelector(elementId + ' td .quantity').value = '';
 }
+function checkout()
+{
+    document.querySelectorAll('#cart tbody tr').forEach(row => row.remove());
+    alert("thanks for buyin")
+}
