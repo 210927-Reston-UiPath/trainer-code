@@ -29,36 +29,48 @@
                         <th>Quantity</th>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr id="SukangPuti">
                             <td>Sukang Puti</td>
-                            <td>$2.00</td>
+                            <td class="price">$2.00</td>
                             <td>White Vinegar</td>
-                            <td><input type="number" name="" id=""></td>
-                            <td><input type="button" value="Buy"></td>
+                            <td><input type="number" name="" id="" class="form-control quantity"></td>
+                            <td><input type="button" value="Buy" class="btn btn-info" onclick="buy('Sukang Puti')"></td>
                         </tr>
-                        <tr>
+                        <tr id="SukangIloco">
                             <td>Sukang Iloco</td>
-                            <td>$3.00</td>
+                            <td class="price">$3.00</td>
                             <td>Ilocano Vinegar</td>
-                            <td><input type="number" name="" id=""></td>
-                            <td><input type="button" value="Buy"></td>
+                            <td><input type="number" name="" id="" class="form-control quantity"></td>
+                            <td><input type="button" value="Buy" class="btn btn-info" onclick="buy('Sukang Iloco')">
+                            </td>
                         </tr>
-                        <tr>
+                        <tr id="SukangTuba">
                             <td>Sukang Tuba</td>
-                            <td>$4.00</td>
+                            <td class="price">$4.00</td>
                             <td>Coco Vinegar</td>
-                            <td><input type="number" name="" id=""></td>
-                            <td><input type="button" value="Buy"></td>
+                            <td><input type="number" name="" id="" class="form-control quantity"></td>
+                            <td><input type="button" value="Buy" class="btn btn-info" onclick="buy('Sukang Tuba')"></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div class="col">
                 <h5>Cart</h5>
+                <table class="table" id="cart">
+                    <thead>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
             </div>
         </div>
 
     </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
