@@ -1,77 +1,218 @@
 <!DOCTYPE html>
+<!--This ^ just declares this particular document to be of the html format-->
 <html lang="en">
 
 <head>
-    <!--The head element holds meta data aka data about the webpage itself  -->
+    <!--
+        contains meta data
+        like what char set to use
+        the title of your tab/window
+    -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tindahan Ni Aling Nena</title>
+    <title>OUR REVIEW AOO</title>
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        div {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: lightgray;
+        }
+
+        .jumbotron {
+            background-color: lightslategray;
+        }
+    </style>
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <!--Data that you'll be presenting-->
+    <!--
+        Contains the actual content of your webpage
+        like the stuff you want to fill the whitespace
+        what the end user would interact with and see
+    -->
+    <h1 class="jumbotron">Lecture on HTML, CSS, Bootstrap</h1>
     <div class="container">
-        <h1>Tindahan ni Aling Nena</h1>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-9">
-                <table class="table">
-                    <thead>
-                        <th>Name</th>
-                        <th>Price</th>
-                        <th>Description</th>
-                        <th>Quantity</th>
-                    </thead>
-                    <tbody>
-                        <tr id="SukangPuti">
-                            <td>Sukang Puti</td>
-                            <td class="price">$2.00</td>
-                            <td>White Vinegar</td>
-                            <td><input type="number" name="" id="" class="form-control quantity"></td>
-                            <td><input type="button" value="Buy" class="btn btn-info" onclick="buy('Sukang Puti')"></td>
-                        </tr>
-                        <tr id="SukangIloco">
-                            <td>Sukang Iloco</td>
-                            <td class="price">$3.00</td>
-                            <td>Ilocano Vinegar</td>
-                            <td><input type="number" name="" id="" class="form-control quantity"></td>
-                            <td><input type="button" value="Buy" class="btn btn-info" onclick="buy('Sukang Iloco')">
-                            </td>
-                        </tr>
-                        <tr id="SukangTuba">
-                            <td>Sukang Tuba</td>
-                            <td class="price">$4.00</td>
-                            <td>Coco Vinegar</td>
-                            <td><input type="number" name="" id="" class="form-control quantity"></td>
-                            <td><input type="button" value="Buy" class="btn btn-info" onclick="buy('Sukang Tuba')"></td>
-                        </tr>
-                    </tbody>
-                </table>
+        <h1>HTML</h1>
+        <div class="container">
+            <h2>Common tags</h2>
+            <div class="container">
+                This is a div tag
             </div>
-            <div class="col">
-                <h5>Cart</h5>
-                <table class="table" id="cart">
-                    <thead>
-                        <th>Item</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                    </thead>
-                    <tbody>
-
-                    </tbody>
-                </table>
-                <button class="btn btn-secondary" onclick="checkout()">Checkout</button>
+            <div class="container">
+                It's a generic block element
+            </div>
+            <div class="container">
+                This means that, it takes vertical space
+            </div>
+            <div class="container">
+                It's width is as wide as your viewport
+            </div>
+            <div class="container">
+                <span>This is a span, a generic inline element</span>
+                <span>It doesn't take vertical space. It exists side by side with other elements as long as there is
+                    space</span>
+            </div>
+            <div class="container">
+                <p>This is a paragraph tag, also a block element</p>
+                <article>This is an article, the semantic counterpart of a p tag, takes less vertical space</article>
+            </div>
+            <div class="container">
+                <a href="https://agilemanifesto.org/" target="_blank">This is a quick link to our page to beat</a>
+            </div>
+            <div class="container">
+                <h3>Difference between head, header, heading?</h3>
+                <p>The head tag, encapsulates meta information about your html resource</p>
+                <header>The header is a semantic element, that describes a header</header>
+                <p>The heading is a way of formatting how things are presented, like a pragraph heading. It has levels
+                </p>
+                <h1>Level 1</h1>
+                <h2>Level 2</h2>
+                <h3>Level 3</h3>
+                <h4>Level 4</h4>
+                <h5>Level 5</h5>
+                <h6>Level 6</h6>
+                <p>Why even use header?</p>
+                <p>
+                    We don't use tags to make words appear <b>bolder</b> or <i>italicized</i> because HTML shouldn't
+                    describe
+                    how things look; just what they are
+                </p>
+            </div>
+            <div class="container">
+                <h3>Presenting a collection of stuff</h3>
+                <div class="container">
+                    <h4>Lists</h4>
+                    <ol>
+                        <li>This is an ordered list</li>
+                        <li>notice the numbers</li>
+                    </ol>
+                    <ul>
+                        <li>This is an unordered list</li>
+                        <li>notice the lack of numbers</li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <h4>Tables</h4>
+                    <table class="table">
+                        <thead>
+                            <th>Name</th>
+                            <th>Favorite Color</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Marielle</td>
+                                <td>Green</td>
+                            </tr>
+                            <tr>
+                                <td>Jacob</td>
+                                <td>Blue</td>
+                            </tr>
+                            <tr>
+                                <td>Azhya</td>
+                                <td>Red</td>
+                                <td>Purple</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="container">
+                <h2>Attributes</h2>
+                <p class="attribute">
+                    Some tags, like your img tag use attributes to define the value of what they're presenting
+                    (img src="where the image is/image address")
+                    <br />
+                    The href attribute of the anchor tag, tells you where the anchor leads
+                    <br />
+                    You can also use certain attributes to identify your elements
+                <ul>
+                    <caption>2 common ways to identify an element via attributes</caption>
+                    <li>ID - unique way to identify an element</li>
+                    <li>Class - a way to identify a group of elements</li>
+                </ul>
+                You need identification to be able to know where to apply certain CSS styling rules as well as behavior
+                in JS. Then again, you can also use the style attribute to apply style to your elements.
+                <p style="color:brown">Using the style attribute, I've changed the font color</p>
+                </p>
             </div>
         </div>
-
     </div>
-    <script src="index.js"></script>
+    <div class="container">
+        <h1>CSS</h1>
+        <div class="container">
+            <h2>Types of Selectors</h2>
+            <h3>Simple Selectors</h3>
+            <ul>
+                <li>
+                    Tag/Element
+                    <ul>
+                        <li>use tags to identify the element</li>
+                        <li>this affects all elements with that tag name</li>
+                    </ul>
+                </li>
+                <li>
+                    Class
+                    <ul>
+                        <li>uses the class name to style a group of elements</li>
+                        <li>denoted by .className</li>
+                    </ul>
+                </li>
+                <li id="id">
+                    ID
+                    <ul>
+                        <li>Uses a unique ID</li>
+                        <li>denoted by #id</li>
+                    </ul>
+                </li>
+                <li class="pseudo">
+                    Pseudo-class
+                    <ul>
+                        <li>
+                            specific keyword at the end of the selector used
+                            to style elements when it is at a certain state
+                        </li>
+                        <li>
+                            :active, :hover, etc...
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Pseudo-element
+                    <ul id="pel">
+                        <li>used to style specific parts of an element</li>
+                        <li>insert content before or after an element</li>
+                        <li>style first letter or line of an element</li>
+                        <li>::before, ::after, ::firstline, ::firstletter, etc</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Combinator Selectors</h3>
+            <ul>
+                <li>Child Descendant</li>
+                <li>Sibling</li>
+                <li>Attribute Selectors</li>
+                <li>Multiple Selectors</li>
+            </ul>
+            <h3>Wild card selector</h3>
+            <ul>
+                <li>Just the *</li>
+                <li>Styles everything, all elements with the given rules</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Bootstrap</h1>
+        <p>CSS framework, responsive, mobile first</p>
+        <a href="https://getbootstrap.com/" target="_blank">Read ALL about it here</a>
+    </div>
 </body>
 
 </html>
