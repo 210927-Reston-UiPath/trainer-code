@@ -1,5 +1,4 @@
 function buy(name) {
-    debugger;
     // find me the element that matches this conditions (i.e a tbody child element of another element with id='cart')
     let cart = document.querySelector('#cart tbody');
     // appends a row to the tbody element
