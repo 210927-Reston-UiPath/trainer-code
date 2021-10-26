@@ -1,0 +1,104 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ReadPDFScreenScraping" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1553.33333333333,855.333333333333" sap2010:WorkflowViewState.IdRef="ReadPDFScreenScraping_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="28">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="22">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ReadPDFScreenScraping" sap:VirtualizedContainerService.HintSize="476,750.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Perfect Match.pdf - Adobe Acrobat Pro DC (32-bit)" sap:VirtualizedContainerService.HintSize="434,658.666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,364" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="getDate" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetText DisplayName="Get Text 'DATE'" sap:VirtualizedContainerService.HintSize="334,168" sap2010:WorkflowViewState.IdRef="NGetText_1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="1523, 417, 126, 27" ElementType="Text" FriendlyName="'6/6/2016'" FullSelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl idx='3' role='row' /&gt;&lt;ctrl name='6/6/2016' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl role='row' /&gt;&lt;ctrl role='text' automationid='' /&gt;" ImageBase64="" InformativeScreenshot="4eac35e171ca39664edebc2e1a7be07e.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='Perfect Match.pdf - Adobe Acrobat Pro DC (32-bit)' /&gt;" SearchSteps="FuzzySelector" Text="6/6/2016" TextMethod="AttributeText" TextSelector="&lt;ctrl role='text' /&gt;">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1367, 417, 68, 27" ElementType="Text" FriendlyName="'DATE'" FullSelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl idx='3' role='row' /&gt;&lt;ctrl name='DATE' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl role='row' /&gt;&lt;ctrl name='DATE' role='text' automationid='' check:text='DATE' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEgAAAAfCAYAAABEZosIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAJ0SURBVGhD7Zi/auQwEMb3NVRvmy4v4MpN6rQutklxvWC79Ia8gSBcuwjSBI6AHyDgfnF3HIvhSBHMFiEE850dy15pbesPe5BV0AfTyJpdzY+Z8VgLBGkVABmkAio5ksUCixkjSYoNf0RevgsHR9W/wVcxaPYiFqb00RzjZvL/7W2JhP/pfs4Q05Qt07w5RScnQAe7QJL+QrGvhaOd6oIhbvwJzVCJtbG+BSBh0S0y62x6Q8GuOz/yA3w35+cLoISjFMud3lHmj+CMIpJ+jCT32NpkUpWBkt6PIGZbuOVfKxlehDTfi3WNtDGZ5QDooLp8wjoi4qA2wdYNnzVI/9utxQyFMyFPALWqdxyrPiPIGlmlibbegsUt0EvQzU+RSddgxZvYYCuPAAEvyOilOGwTuObN1DfnDuTfwU/frKfkFSC1bOTGpuoAsgMi+ZkybySvADWS9s9mw9CcpSybWrPSiYB0NhPvfwM0vV9+tcvZIpWnU7P+boCG5nz8ppPL06VZewxoXGIGCEOZucxEnvWgjzzFUuwfN2lTGUnPrZu1V4Ck/jLRbA9z0lyGyBlm26x9ArR/RjpM08clJMOzM7uZyBtAFbZsNcxAZMWxk1NEgWdp2g/YXl4AqlDwtfTBetUc9FU8a6UOkPZm06zPGlADJuNgNBYHbI0gSp+hHPPzUuxCPDf3luEzpDXjTHROgIzWwKF8dGmmBBzdITddhQyzUutznI3HOhGQpZ1+YUYSpE+FmjmfekWeXol9tvONWpL6Zn3WgGJQtgF/yFHORa1cijlMyLKfdib6akBBIwVABgVABgVABgVABgVABgVABgVAWgH/AEeKA1mef0skAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" Text="DATE" TextMethod="AttributeText" TextSelector="&lt;ctrl role='text' /&gt;" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">[getDate]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[getDate]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp FilePath="C:\Program Files (x86)\Adobe\Acrobat DC\Acrobat\acrobat.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAANBSURBVGhD7Zg/iBNBGMWvsdUrbBUrC40gWEgK61hYWNlYW1naWYndpbKRIILYBGwESSUI5gpBEAJWIqmsNKVN/jbjvM99cW58ud3bzc4SuOLH7n6Z75v3ZmdnZ7PnnNtpZDBkdW7viee3x9XEoee66rsIMkh84a9BR3WCASplQgaBL4iRtw4Wjx662fdvbjqdbpX5y+ez5c0rk6yfUiZkEPhiP0z8vTuy822yePq49J2QQZAVdLMvn2Wn22bx4H4pEzIIaEB1VhdlTMggaMIAOKkJGQRNGQDL27dCE3eVPiKDoEkD018/3bJ9jSbAxjshg6CSAS8Aq9fqwlk3f3ag2+ThayA/03GoNAIZBFUMzD68t85hYnn1omxThGB59ZK0ThkEVQygY8xjM+JrzN++ke3ywMuzUQMcQRxVuyI0YoAjz9Wk7B0A1BHrIzIImKiKFiF4ACvto1gj1kdkEDBRFS0CX0hVHmLQmAGu4ziq34vSiAFsAJkPdu4ZCKeP3Qn/PJTd1aY3ELxBsXza3fDXMILVCTEyf/XC2ss6GckNQBhz8SUXbMwMGEFsHffmjptizIv1ERkETFRFN2FvzmD5BHyhQSSmFH7Hte2XvEG2UfUA68T6iAwCJqqiMZgmtnnLcjaOKkVHJs1Q3DaDbWJ9RAYBE1XRkPUoZssmKLIDxfNg5LzkWDPWR2QQMFEVJestsx9t3oHjpkMZajPAtd5WFn4GejN5q8pJoY5YH5FBwERVFNCAPZg44o27ZfGAOmJ9RAYBE1VRYlOn4HpelloNpODUgCqaklMDqmhMu912rVbLdTod1+v1/ot1u12LDQYDixFch3UUSQxQTL/ft/PRaGRHmBkOh2YGJvg7YmAymch6IckMQBDPOdIQjBiMwAQNhLl5JDMAkQDn4/H4iAEK55GgXVwrJpkBgPlO0bjmOaYPf0OcUyissYlkBmJBiOGOYDph+uCcBsJ2eTRmQK1MfDbCdnkkMVAn1Q3UtEkrAne8lQyU/n9/C2CXW8XAayZjy4wPF9VJHWDkTfy/b+d3SiOQQeCT9lfnz0xpojH+arikNAIZJD5x339pfTpSMCHLG5c/+uNG8UAGdwkZ3B3c3h8hhu4KrVoKPgAAAABJRU5ErkJggg==" InformativeScreenshot="d5b2ae6912363b76f5d617a1eb67d180.png" Selector="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='Perfect Match.pdf - Adobe Acrobat Pro DC (32-bit)'/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
